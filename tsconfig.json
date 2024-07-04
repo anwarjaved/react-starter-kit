@@ -1,0 +1,88 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "moduleResolution":"Node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+	  "@FormFuse/src/*": [
+        "FormFuse/src/*"
+      ],
+	  "@actions/*": [
+        "src/actions/*"
+      ],
+	  "@slices/*": [
+        "src/redux/slices/*"
+      ],
+	  "@src/components": [
+        "src/components/*"
+      ],
+	  "@context/*": [
+        "src/components/Context/*"
+      ],
+      "@routing/*": [
+        "src/routing/*"
+      ],
+      "@pages/": [
+        "src/components/pages/*"
+      ],
+      "@atoms/*": [
+        "src/components/Atoms/*"
+      ],
+      "@layouts/*": [
+        "src/components/Templates/*"
+      ],
+      "@selectors/*": [
+        "src/redux/selectors/*"
+      ],
+	  "@redux/*": [
+        "src/redux/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+	  "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@utility/*": [
+        "src/utility/*"
+      ],
+	  "@api/*": [
+        "src/api/*"
+      ]
+    },
+	"typeRoots": ["./node_modules/@types", "./src/@types"]
+  },
+  "include": [
+    "src",
+	"FormFuse/src",
+	"SeoRender/src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "src/**/*.spec.*"
+  ]
+}
