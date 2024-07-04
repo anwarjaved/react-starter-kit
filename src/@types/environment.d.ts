@@ -4,7 +4,7 @@ declare global {
   namespace NodeJS {
     interface ProcessEnv {
       ENV: "test" | "dev" | "prod";
-	  ProductName: string;
+	  ApiUrl: string;
     }
   }
 }
